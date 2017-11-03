@@ -1,0 +1,22 @@
+import java.util.HashMap;
+
+public class RoomDescriptionCatalog {
+ private HashMap<String, RoomDescription> roomDescriptions = new HashMap<String, RoomDescription>();
+
+ public RoomDescription getRoomDescription(String roomType) {
+  return roomDescriptions.get(roomType);
+ }
+
+ private void load() {
+
+ }
+
+ public HashMap<String, RoomDescription> getRoomDescriptions() {
+  return roomDescriptions;
+ }
+
+ public void setRoomDescriptions(HashMap<String, RoomDescription> roomDescriptions) {
+  this.roomDescriptions = roomDescriptions;
+ }
+
+}

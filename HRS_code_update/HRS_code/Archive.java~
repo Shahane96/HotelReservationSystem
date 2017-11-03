@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+public class Archive {
+    private ArrayList<Record> records = new ArrayList<Record>();
+
+    public ArrayList<Record> getRecords() {
+        return records;
+    }
+
+    public void setRecords(ArrayList<Record> records) {
+        this.records = records;
+        //System.out.println(records);
+    }
+
+    private void load() {
+      System.out.println("Hi");
+    }
+
+    public void utilizeGuest(Room room) {
+
+    }
+    
+    public static void main(String[] args) {
+        
+        Archive ach = new Archive();
+        Record re1 = new Record();
+        Record re2 = new Record();
+        ArrayList<Record> list = new ArrayList<Record>();
+
+ 
+
+        // Adding items to arrayList
+
+        list.add(re1);
+        list.add(re2);
+        ach.setRecords(list);
+    }
+}
